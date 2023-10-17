@@ -14,6 +14,12 @@
 		7462D4E12ADDB30A00E9F195 /* TripPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7462D4DF2ADDB30A00E9F195 /* TripPlanner.xcdatamodeld */; };
 		7462D4E32ADDB30B00E9F195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7462D4E22ADDB30B00E9F195 /* Assets.xcassets */; };
 		7462D4E62ADDB30B00E9F195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7462D4E42ADDB30B00E9F195 /* LaunchScreen.storyboard */; };
+		74CC7A502ADDFBEE00A35F96 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC7A4F2ADDFBEE00A35F96 /* Global.swift */; };
+		74CC7A542ADE1AC400A35F96 /* SearchStocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC7A532ADE1AC400A35F96 /* SearchStocksTableViewController.swift */; };
+		74CC7A582ADE1E6800A35F96 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC7A572ADE1E6800A35F96 /* Model.swift */; };
+		74F3C9332ADDD0EA00D48EA6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3C9322ADDD0EA00D48EA6 /* Service.swift */; };
+		74F3C9352ADDD38200D48EA6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3C9342ADDD38200D48EA6 /* CoreDataStack.swift */; };
+		74F3C9372ADDE57700D48EA6 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3C9362ADDE57700D48EA6 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		7462D4E22ADDB30B00E9F195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7462D4E52ADDB30B00E9F195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7462D4E72ADDB30B00E9F195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CC7A4F2ADDFBEE00A35F96 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		74CC7A532ADE1AC400A35F96 /* SearchStocksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStocksTableViewController.swift; sourceTree = "<group>"; };
+		74CC7A572ADE1E6800A35F96 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		74F3C9322ADDD0EA00D48EA6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		74F3C9342ADDD38200D48EA6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		74F3C9362ADDE57700D48EA6 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,38 @@
 		7462D4D52ADDB30A00E9F195 /* TripPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				74F3C9312ADDD0BE00D48EA6 /* Model */,
+				74F3C9302ADDD0A800D48EA6 /* Controllers */,
 				7462D4D62ADDB30A00E9F195 /* AppDelegate.swift */,
 				7462D4D82ADDB30A00E9F195 /* SceneDelegate.swift */,
-				7462D4DA2ADDB30A00E9F195 /* ViewController.swift */,
 				7462D4DC2ADDB30A00E9F195 /* Main.storyboard */,
 				7462D4E22ADDB30B00E9F195 /* Assets.xcassets */,
 				7462D4E42ADDB30B00E9F195 /* LaunchScreen.storyboard */,
 				7462D4E72ADDB30B00E9F195 /* Info.plist */,
-				7462D4DF2ADDB30A00E9F195 /* TripPlanner.xcdatamodeld */,
 			);
 			path = TripPlanner;
+			sourceTree = "<group>";
+		};
+		74F3C9302ADDD0A800D48EA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7462D4DA2ADDB30A00E9F195 /* ViewController.swift */,
+				74F3C9362ADDE57700D48EA6 /* EditViewController.swift */,
+				74CC7A532ADE1AC400A35F96 /* SearchStocksTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		74F3C9312ADDD0BE00D48EA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7462D4DF2ADDB30A00E9F195 /* TripPlanner.xcdatamodeld */,
+				74F3C9322ADDD0EA00D48EA6 /* Service.swift */,
+				74F3C9342ADDD38200D48EA6 /* CoreDataStack.swift */,
+				74CC7A4F2ADDFBEE00A35F96 /* Global.swift */,
+				74CC7A572ADE1E6800A35F96 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CC7A502ADDFBEE00A35F96 /* Global.swift in Sources */,
 				7462D4DB2ADDB30A00E9F195 /* ViewController.swift in Sources */,
 				7462D4D72ADDB30A00E9F195 /* AppDelegate.swift in Sources */,
+				74F3C9332ADDD0EA00D48EA6 /* Service.swift in Sources */,
+				74F3C9352ADDD38200D48EA6 /* CoreDataStack.swift in Sources */,
 				7462D4D92ADDB30A00E9F195 /* SceneDelegate.swift in Sources */,
+				74CC7A542ADE1AC400A35F96 /* SearchStocksTableViewController.swift in Sources */,
+				74CC7A582ADE1E6800A35F96 /* Model.swift in Sources */,
 				7462D4E12ADDB30A00E9F195 /* TripPlanner.xcdatamodeld in Sources */,
+				74F3C9372ADDE57700D48EA6 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
